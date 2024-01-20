@@ -1,2 +1,4 @@
-# latest-new
-获取当日热点新闻
+# GoFrame Template For SingleRepo
+
+Quick Start: 
+- https://goframe.org/pages/viewpage.action?pageId=1114399
