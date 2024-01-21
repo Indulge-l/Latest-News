@@ -2,10 +2,10 @@ package cmd
 
 import (
 	"context"
-
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
 	"github.com/gogf/gf/v2/os/gcmd"
+	"latest-news/internal/controller/latest_news"
 
 	"latest-news/internal/controller/hello"
 )
@@ -21,6 +21,7 @@ var (
 				group.Middleware(ghttp.MiddlewareHandlerResponse)
 				group.Bind(
 					hello.NewV1(),
+					latest_news.NewLatestNewsControllerV1(),
 				)
 			})
 			s.Run()
